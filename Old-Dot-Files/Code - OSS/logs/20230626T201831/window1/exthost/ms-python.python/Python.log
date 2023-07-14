@@ -1,0 +1,107 @@
+2023-06-26 20:21:03.530 [info] Test server listening.
+2023-06-26 20:21:03.545 [info] > conda info --json
+2023-06-26 20:21:03.603 [info] Found: /bin/python --> /bin/python3.11
+2023-06-26 20:21:03.605 [info] Found: /bin/python3 --> /bin/python3.11
+2023-06-26 20:21:03.605 [info] Found: /bin/python3.11 --> /bin/python3.11
+2023-06-26 20:21:03.620 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-26 20:21:03.626 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-26 20:21:03.626 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-26 20:21:03.626 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-26 20:21:03.626 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-26 20:21:03.626 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-26 20:21:03.627 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-06-26 20:21:03.627 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-06-26 20:21:03.627 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2023-06-26 20:21:03.714 [info] Found: /sbin/python --> /sbin/python3.11
+2023-06-26 20:21:03.715 [info] Found: /sbin/python3 --> /sbin/python3.11
+2023-06-26 20:21:03.715 [info] Found: /sbin/python3.11 --> /sbin/python3.11
+2023-06-26 20:21:03.722 [info] Found: /usr/bin/python --> /usr/bin/python3.11
+2023-06-26 20:21:03.723 [info] Found: /usr/bin/python3 --> /usr/bin/python3.11
+2023-06-26 20:21:03.723 [info] Found: /usr/bin/python3.11 --> /usr/bin/python3.11
+2023-06-26 20:21:03.780 [info] Found: /usr/sbin/python --> /usr/sbin/python3.11
+2023-06-26 20:21:03.781 [info] Found: /usr/sbin/python3 --> /usr/sbin/python3.11
+2023-06-26 20:21:03.781 [info] Found: /usr/sbin/python3.11 --> /usr/sbin/python3.11
+2023-06-26 20:21:03.814 [info] > /bin/python -I ~/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/interpreterInfo.py
+2023-06-26 20:21:03.842 [info] > /sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/interpreterInfo.py
+2023-06-26 20:21:03.954 [info] > /usr/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/interpreterInfo.py
+2023-06-26 20:21:03.965 [info] > /usr/sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/interpreterInfo.py
+2023-06-26 20:21:04.071 [error] [
+  'Failed to activate a workspace, Class name = g, completed in 555ms, has a falsy return value, Arg 1: <Uri:/home/vicky/Workspace/foobar/level1>, Return Value: undefined',
+  [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+  Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+   The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+  	at I (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:95:44776)
+  	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:117:26911)
+  	at w.activate (/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:806617)
+  	at /home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2386
+  	at Array.map (<anonymous>)
+  	at g.activateWorkspace (/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2376)]
+]
+2023-06-26 20:21:04.072 [error] Failure during activation. [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at I (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:95:44776)
+	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:117:26911)
+	at w.activate (/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:806617)
+	at /home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2386
+	at Array.map (<anonymous>)
+	at g.activateWorkspace (/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2376)]
+2023-06-26 20:21:04.072 [error] sendStartupTelemetry() failed. [Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at I (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:95:44776)
+	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:117:26911)
+	at w.activate (/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:806617)
+	at /home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2386
+	at Array.map (<anonymous>)
+	at g.activateWorkspace (/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2376)]
+2023-06-26 20:21:04.077 [info] Python interpreter path: /bin/python
+2023-06-26 20:21:04.126 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2023-06-26 20:21:06.197 [info] Starting Jedi language server for level1.
+2023-06-26 20:21:24.140 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:21:59.723 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:22:08.815 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:22:48.376 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:22:53.933 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:22:54.806 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:22:56.750 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:23:13.608 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:23:16.540 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:23:17.464 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:23:29.672 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:23:30.683 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:23:52.329 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:24:09.238 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:24:27.434 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:24:33.558 [info] Send text to terminal: /bin/python /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:24:46.477 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:24:47.605 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:24:49.928 [info] Send text to terminal: /bin/python /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:25:00.278 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:25:08.162 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:25:09.270 [info] Send text to terminal: /bin/python /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:25:42.955 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:25:49.320 [info] Send text to terminal: /bin/python /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:25:52.792 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:25:54.019 [info] Send text to terminal: /bin/python /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:34:22.594 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:34:27.491 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:34:29.568 [info] Send text to terminal: /bin/python /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:34:37.807 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:34:45.609 [info] Send text to terminal: /bin/python /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:35:09.592 [info] Send text to terminal: /bin/python /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:35:11.173 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:35:12.341 [info] Send text to terminal: /bin/python /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:35:46.888 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 20:35:47.609 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:11:13.220 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:11:15.566 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:18:16.954 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:18:27.385 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:18:28.621 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:18:29.030 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:19:27.213 [info] Send text to terminal: /bin/python /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:35:40.120 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:35:49.085 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:35:49.594 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py
+2023-06-26 21:35:50.393 [info] Discover tests for workspace name: level1 - uri: /home/vicky/Workspace/foobar/level1/braille-translation.py

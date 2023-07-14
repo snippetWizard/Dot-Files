@@ -1,0 +1,245 @@
+
+############################################################################
+#
+#   linuxkarl's i3 config (countless hours spent)
+#   Copyright © 2022 Karl Haines (MIT LICENSE)
+#   using i3bar with py3status (top) and i3blocks (bottom)
+#   t.me@linuxkarl615 / https://github.com/KarlHaines82
+#
+############################################################################
+# This config is available for any usage that you see fit, proivided
+# under the MIT LICENSE (See the bottom of this file for details)
+############################################################################
+# ALL Dracula theme elements and colors were beautifully provided by:
+# https://draculatheme.com (Currently "vamping" themes on over 270 apps!)
+# (All were expertly provided under the MIT LICENSE, as is this config
+############################################################################
+# THANK YOU! Zeno Rocha https://zenorocha.com/
+# For all of your hard work on the best and most complete theme around!
+############################################################################
+
+# class                 border  bground text    indicator child_border
+client.focused          #6271A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44474A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #281A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44474A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #281A36 #282A36 #F8F8F2 #282A36   #282A36
+client.background       #F7F8F2
+## font
+font pango:OpenDyslexic 11
+# Start XDG autostart .desktop files using dex. See also
+# https://wiki.archlinux.org/index.php/XDG_Autostart
+exec --no-startup-id dex --autostart --environment i3
+exec QT_QPA_PLATFORMTHEME=qt5ct polkit-kde-authentication-agent-1
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id env $HOME/.config/conky/conky.sh
+exec picom -Cb
+exec dunst
+exec --no-startup-id nm-tray
+exec --no-startup-id msm_notifier
+exec --no-startup-id kdeconnect-indicator
+exec --no-startup-id telegram-desktop
+# last
+##exec --no-startup-id manjaro-hello
+############################################################################
+# The combination of xss-lock, nm-applet and pactl is a popular choice, so
+# they are included here as an example. Modify as you see fit.
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
+# Use loginctl lock-session to lock your screen.
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+############################################################################
+########
+# GAPS #
+########
+for_window [all] border pixel 2
+gaps inner 15
+gaps outer 10
+################
+# KEY BINDINGS #
+################
+# WINDOWS KEY
+set $mod Mod4
+# ALT KEY
+set $moda Mod1
+# use these keys for focus, movement, and resize directions when reaching for
+# the arrows is not convenient
+set $up l
+set $down k
+set $left j
+set $right semicolon
+
+# use Mouse+$mod to drag floating windows to their wanted position
+bindsym floating_modifier Mod4
+
+# start a terminal, MOD+ENTER for kitty
+# and MOD+ALT+RETURN for alacritty
+bindsym $mod+Return exec kitty
+bindsym $moda+Return exec alacritty
+# kill focused any focused window
+# with MOD+Q or MOD+ALT+Q
+bindsym $mod+Shift+w kill
+bindsym $moda+q kill
+
+# start dmenu (a program launcher)
+#bindsym $mod+d exec --no-startup-id dmenu_run
+# A more modern dmenu replacement is rofi:
+#bindsym $mod+d exec "rofi -modi drun,run -show drun"
+# There is also j4-dmenu-desktop and i3-dmenu-desktop which display all
+# installed with a .desktop file. It is a wrapper around dmenu,
+# so you may want ti try one if those, or possibly bemenu, which also
+# works well under wayland if you're concerned with that
+
+# SO, MOD+D for rofi, MOD+B for bemenu
+bindsym $mod+d exec --no-startup-id rofi -show combi
+bindsym $mod+b exec --no-startup-id bemenu-run
+bindsym $mod+n exec --no-startup-id nvim-qt
+bindsym $mod+$moda+f exec --no-startup-id firefox
+bindsym $mod+$moda+q exec --no-startup-id qutebrowser
+bindsym $mod+$moda+d exec --no-startup-id env QT_QPA_PLATFORMTHEME='qt5ct' dolphin
+bindsym $mod+$moda+t exec --no-startup-id thunar
+bindsym $mod+$moda+m exec --no-startup-id dex /usr/share/applications/spotify-adblock.desktop
+bindsym $mod+$moda+c exec --no-startup-id caprine
+# change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+# split in vertical orientation
+bindsym $mod+v split v
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+Alt+space floating toggle
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+# focus the parent container
+bindsym $mod+a focus parent
+# focus the child container
+bindsym $mod+o focus child
+
+# move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1 "
+set $ws2 "2 "
+set $ws3 "3 "
+set $ws4 "4 "
+set $ws5 "5 "
+set $ws6 "6 "
+set $ws7 "7 "
+set $ws8 "8 "
+set $ws9 "9 "
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Are you sure want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
+        # same bindings, but for the arrow keys
+        bindsym Left        resize shrink width 10 px or 10 ppt
+        bindsym Down        resize grow height 10 px or 10 ppt
+        bindsym Up          resize shrink height 10 px or 10 ppt
+        bindsym Right       resize grow width 10 px or 10 ppt
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# callbacks on NUM and CAPS for i3blocks
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
+
+# Start i3bar to display a workspace bar plus the system information i3status
+# finds out, if available
+####### top bar, i3bar w/ status from py3status
+
+bar {
+    status_command i3blocks -c /home/karl/.i3blocks.conf
+    position bottom
+    colors {
+        background #281A36
+        statusline #F7F8F2
+        separator  #44474A
+        focused_workspace  #44474A #44475A #F8F8F2
+        active_workspace   #281A36 #44475A #F8F8F2
+        inactive_workspace #281A36 #282A36 #BFBFBF
+        urgent_workspace   #FF5554 #FF5555 #F8F8F2
+        binding_mode       #FF5554 #FF5555 #F8F8F2
+    }
+}
+
+
+# T H E  E N D #

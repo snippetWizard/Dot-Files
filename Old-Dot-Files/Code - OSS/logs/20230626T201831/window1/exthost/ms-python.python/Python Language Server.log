@@ -1,0 +1,80 @@
+2023-06-26 20:21:49.731 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2"
+
+2023-06-26 20:21:49.735 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3"
+
+2023-06-26 20:21:49.740 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "4"
+
+2023-06-26 20:22:05.970 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "26"
+
+2023-06-26 20:22:55.800 [info] ERROR:pygls.protocol:Failed to handle request 51 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///home/vicky/Workspace/foobar/level1/braille-translation.py'), range=70:5-70:5, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 602, in code_action
+    extract_function_refactoring = jedi_script.extract_function(
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 662, in extract_function
+    return extract_function(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 211, in extract_function
+    assert len(nodes)
+AssertionError
+
+2023-06-26 20:22:55.851 [info] [Error - 8:22:55 PM] Request textDocument/codeAction failed.
+2023-06-26 20:22:55.851 [info]   Message: AssertionError
+  Code: -32602 
+{'traceback': ['  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n                                ^^^^^^^^^^^^^^^\n', '  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 602, in code_action\n    extract_function_refactoring = jedi_script.extract_function(\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 662, in extract_function\n    return extract_function(\n           ^^^^^^^^^^^^^^^^^\n', '  File "/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 211, in extract_function\n    assert len(nodes)\n']}
+2023-06-26 20:24:55.766 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "291"
+
+2023-06-26 20:25:02.472 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "302"
+
+2023-06-26 20:25:02.887 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "305"
+
+2023-06-26 20:25:45.007 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "340"
+
+2023-06-26 20:34:38.482 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "441"
+
+2023-06-26 20:34:40.014 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "445"
+
+2023-06-26 20:34:41.549 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "446"
+
+2023-06-26 20:35:34.626 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "474"
+
+2023-06-26 20:35:38.336 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "480"
+
+2023-06-26 20:35:43.023 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "491"
+
+2023-06-26 21:11:13.368 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "511"
+
+2023-06-26 21:11:24.403 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "530"
+
+2023-06-26 21:11:29.277 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "537"
+
+2023-06-26 21:11:31.050 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "542"
+
+2023-06-26 21:11:37.147 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "551"
+
+2023-06-26 21:12:04.570 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "580"
+
+2023-06-26 21:12:04.572 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "581"
+
+2023-06-26 21:12:04.576 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "582"
+
+2023-06-26 21:12:04.603 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "583"
+
+2023-06-26 21:13:30.419 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "598"
+
+2023-06-26 21:19:13.251 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "621"
+
+2023-06-26 21:24:29.316 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "648"
+
+2023-06-26 21:32:10.074 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "658"
+
+2023-06-26 21:35:44.548 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "675"
+

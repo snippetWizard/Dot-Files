@@ -1,0 +1,5 @@
+[Default Applications]
+text/plain=org.gnome.gedit.desktop
+
+[Added Associations]
+text/plain=org.gnome.gedit.desktop;

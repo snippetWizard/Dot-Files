@@ -1,0 +1,40 @@
+2023-06-26 20:18:35.527 [info] Extension host with pid 1848 started
+2023-06-26 20:18:35.708 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-06-26 20:18:35.744 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-06-26 20:18:35.792 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-06-26 20:18:35.884 [info] Eager extensions activated
+2023-06-26 20:18:35.986 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-06-26 20:18:36.003 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-06-26 20:18:50.285 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-06-26 20:20:02.631 [info] Extension host terminating: renderer closed the MessagePort
+2023-06-26 20:20:02.643 [info] Extension host with pid 1848 exiting with code 0
+2023-06-26 20:20:05.589 [info] Extension host with pid 1967 started
+2023-06-26 20:20:05.590 [info] Skipping acquiring lock for /home/vicky/.config/Code - OSS/User/workspaceStorage/7c642beb57def3c2daa9654b73d62d2a.
+2023-06-26 20:20:05.751 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2023-06-26 20:20:05.839 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-06-26 20:20:05.855 [info] Eager extensions activated
+2023-06-26 20:20:05.862 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-06-26 20:20:05.872 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-06-26 20:20:08.940 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2023-06-26 20:20:10.127 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-06-26 20:21:02.925 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onWalkthrough:pythonWelcome'
+2023-06-26 20:21:05.078 [error] Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at I (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:95:44776)
+	at get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:117:26911)
+	at w.activate (/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:806617)
+	at /home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2386
+	at Array.map (<anonymous>)
+	at g.activateWorkspace (/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2376)
+2023-06-26 20:22:31.244 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-06-26 20:22:31.397 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-06-26 20:22:55.851 [error] [ms-python.python] provider FAILED
+2023-06-26 20:22:55.859 [error] Error: AssertionError
+	at /home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2001385
+	at /home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2001679
+	at Immediate.<anonymous> (/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2002041)
+	at process.processImmediate (node:internal/timers:466:21)
+2023-06-26 20:24:50.127 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2023-06-26 21:35:54.484 [info] Extension host terminating: renderer closed the MessagePort
+2023-06-26 21:35:54.548 [info] Extension host with pid 1967 exiting with code 0

@@ -1,0 +1,9 @@
+2023-06-26 20:18:38.121 [info] [perf] Render performance baseline is 84ms
+2023-06-26 20:20:07.961 [info] [perf] Render performance baseline is 85ms
+2023-06-26 20:21:02.632 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, envShellEvent, testObserver, quickPickItemTooltip, envCollectionWorkspace, saveEditor, envCollectionOptions'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2023-06-26 20:21:02.674 [error] [ms-python.python]: editor/content is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-python.python
+2023-06-26 20:22:55.861 [error] AssertionError: Error: AssertionError
+	at /home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2001385
+	at /home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2001679
+	at Immediate.<anonymous> (/home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal/out/client/extension.js:2:2002041)
+	at process.processImmediate (node:internal/timers:466:21)

@@ -1,0 +1,7 @@
+2023-06-26 20:20:28.547 [info] Getting Manifest... ms-python.python
+2023-06-26 20:20:29.426 [info] Installing extension: ms-python.python
+2023-06-26 20:20:57.732 [info] Extension signature verification is not done: ms-python.python
+2023-06-26 20:21:02.370 [info] Extracted extension to /home/vicky/.vscode-oss/extensions/.43828abf-1309-4259-8323-05e84965576e: ms-python.python
+2023-06-26 20:21:02.395 [info] Renamed to /home/vicky/.vscode-oss/extensions/ms-python.python-2023.10.1-universal
+2023-06-26 20:21:02.407 [info] Extracting extension completed. ms-python.python
+2023-06-26 20:21:02.437 [info] Extension installed successfully: ms-python.python
